@@ -1,5 +1,203 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  max-width: 354px;
+
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+.header {
+  block-size: 100vh;
+  min-block-size: 668px;
+  margin: 10px 10px 40px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content 1fr;
+}
+
+.decorated-zone {
+  color: var(--accent-color);
+}
+
+.decoration-icon {
+  position: absolute;
+  text-transform: uppercase;
+  justify-self: end;
+  padding-right: 32px;
+  block-size: 26px;
+}
+
+.decoration-icon::after {
+  content: "";
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  border: 2px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  top: 8px;
+  right: 10px;
+}
+
+.decorated-corner {
+  position: relative;
+}
+
+.decorated-corner::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  right: 0;
+}
+
+.decorated-corner::after {
+  content: "";
+  position: absolute;
+  left: 0; 
+  bottom: 0;
+  width: 25px; 
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__theme-menu {
+  width: 70px;
+  height: 98px;
+  justify-self: end;
+  margin-top: 63px;
+  font-size: var(--main-size-font);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: inherit;
+  border: none;
+  text-transform: lowercase;
+}
+
+.cover-title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  line-height: 83%;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0 var(--accent-color);
+  margin-block-end: 15px;
+}
+
+.cover__description-text {
+  height: 117px;
+  margin-block-start: 38px;
+}
+
+.title-decor {
+  font-size: var(--main-size-font);
+  font-weight: bold;
+  line-height: 23.4px;
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+.content {
+  display: grid;
+  gap: 50px;
+  margin: 0 10px 0 10px;
+}
+
+.section-content {
+  font-size: var(--main-size-font);
+  line-height: 23.4px;
+  display: grid;
+}
+
+.section-content-title {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: var(--main-size-font);
+}
+
+.text-block-title {
+  margin-bottom: 10px;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.text-block-content {
+  color: var(--color);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.last-paragraph {
+  margin-bottom: 0px;
+}
+
+.text-block {
+  display: grid;
+}
+
+.text-block-subtitle {
+  background-color: var(--accent-color);
+  color: var(--color_titles);
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.gallery-item {
+  box-sizing: border-box;
+}
+
+.gallery-image {
+  inline-size: 100%;
+  block-size: 100%;
+  max-block-size: 100%;
+  object-fit: cover;
+  gap: 10px;
+}
+
+.footer {
+  margin: 0 10px 0 10px;
+  height: 100vh;
+  min-height: 668px;
+  display: grid;
+  margin-top: 40px;
+}
+
+.footer-title {
+  justify-self: center;
+  align-self: center;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: #DB00FF;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: 83%;
+
 }
