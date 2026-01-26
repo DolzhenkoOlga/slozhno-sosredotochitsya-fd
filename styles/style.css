@@ -16,7 +16,7 @@
 .header {
   block-size: 100vh;
   min-block-size: 668px;
-  margin: 10px 10px 40px 10px;
+  margin: 10px 10px 30px 10px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
@@ -70,6 +70,7 @@
   height: 25px;
   border-left: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-color);
+  margin-bottom: 20px;
 }
 
 .header__theme-menu {
@@ -102,6 +103,10 @@
   margin-block-end: 15px;
 }
 
+.header-text {
+  block-size: 117px;
+}
+
 .cover__description-text {
   height: 117px;
   margin-block-start: 38px;
@@ -129,7 +134,7 @@
 
 .section-content-title {
   color: var(--accent-color);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: var(--main-size-font);
 }
 
@@ -152,6 +157,10 @@
   margin-bottom: 0px;
 }
 
+.last-title {
+  margin-bottom: 20px;
+}
+
 .text-block {
   display: grid;
 }
@@ -161,7 +170,10 @@
   color: var(--color_titles);
   font-weight: 400;
   margin-bottom: 10px;
-  margin-top: 10px;
+}
+
+.gallery-title {
+  margin-top: 30px;
 }
 
 .gallery {
@@ -170,6 +182,7 @@
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
+  gap: 10px;
 }
 
 .gallery-item {
