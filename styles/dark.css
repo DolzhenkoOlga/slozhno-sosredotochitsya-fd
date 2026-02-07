@@ -6,7 +6,6 @@
 
 :root.theme-dark {
   --bg-image: url(../images/cover-image-dark.png);
-  --main-font-family: "IBM Plex Mono", sans-serif;
   --color_titles: #000028;
   --accent-color: #ff0070;
   --color: #F1B2CE;
@@ -15,19 +14,5 @@
   --color-disign: #ff0070;
   --icon-visible: visible;
   --content-title: #ff0070;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  --bg-image: url(../images/cover-image-dark.png);
-  --main-font-family: "IBM Plex Mono", sans-serif;
-  --color_titles: #000028;
-  --accent-color: #ff0070;
-  --color: #F1B2CE;
-  --main-size-font: 18px;
-  --main-headline: #DB00FF;
-  --color-disign: #ff0070;
-  --icon-visible: visible;
-  --content-title: #ff0070;
-}
+  --color-hover: rgba(255, 0, 112, 0.4);
 }

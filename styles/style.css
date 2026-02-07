@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font-family), Arial, sans-serif;
+  font-family: var(--main-font-family), Courier, monospace;
   font-size: 18px;
   background-image: var(--bg-image);
   background-position: center;
@@ -73,7 +73,6 @@
 }
 
 .header__theme-menu {
-  height: 98px;
   justify-self: end;
   font-size: var(--main-size-font);
 }
@@ -94,11 +93,15 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--color-disign);
+  border: 1px solid var(--color-hover);
 }
 
 .header__theme-menu-button:focus {
-  border-bottom: 1px solid var(--color-disign);
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--color-disign);
 }
 
 .header__theme-menu-button_active {
@@ -132,7 +135,6 @@
   font-size: var(--main-size-font);
   line-height: 23.4px;
   display: grid;
-
 }
 
 .section-content-title {
@@ -155,6 +157,10 @@
 }
 
 .link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
   border: 1px solid var(--color);
 }
 
@@ -164,11 +170,14 @@
   margin-bottom: 20px;
 }
 
-.last-paragraph {
-  margin-bottom: 0px;
+.text-block:last-of-type .text-block-content:last-of-type,
+.text-block-content p:last-of-type {
+  margin-bottom: 0;
 }
 
-.last-title {
+
+
+.how_to_concentrate .text-block-title {
   margin-bottom: 20px;
 }
 
@@ -240,81 +249,81 @@
     padding-right: 34px;
     top: 20px;
     right: 16px;
-}
+  }
 
   .cover-title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-}
+  }
 
   .cover__description-text {
     width: 364px;
     justify-self: end;
-}
+  }
 
   .content {
     display: grid;
     gap: 80px;
     padding: 60px 20px;
-}
+  }
 
   .section-content {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
-}
+  }
 
   .what_reduces_concentration {
-  .text-blocks {
-    grid-column: 1/ -1;
+    .text-blocks {
+      grid-column: 1/ -1;
+    }
   }
-}
 
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-block-start: 10px;
-}
+  }
 
   .gallery-item:first-of-type {
     grid-column: span 2;
-}
+  }
   .gallery-item:nth-of-type(2) {
     grid-row: span 2;
-}
+  }
   .gallery-item:nth-of-type(3) {
     grid-row: span 2;
-}
+  }
   .gallery-item:last-of-type {
     grid-column: span 2;
-}
+  }
+
+  .footer-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 @media (width >= 1024px) {
-.header__theme-menu-list {
-  flex-direction: row;
-  padding-inline-start: 20px;
-}
+  .header__theme-menu-list {
+    flex-direction: row;
+    padding-inline-start: 20px;
+  }
 
-.header__theme-menu {
-  justify-self: center;
-  align-self: flex-start;
-}
+  .header__theme-menu {
+    justify-self: center;
+    align-self: flex-start;
+  }
 
-.cover__description-text {
-  width: 491px;
-  justify-self: end;
-}
+  .cover__description-text {
+    width: 491px;
+    justify-self: end;
+  }
 
-.section-content {
-  column-gap: 10px;
-}
+  .section-content {
+    column-gap: 10px;
+  }
 
-.column {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.footer-title {
-  font-size: 157px;
-}
+  .what_reduces_concentration .text-blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
