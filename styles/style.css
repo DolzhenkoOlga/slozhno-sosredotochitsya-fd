@@ -87,7 +87,6 @@
 
 .header__theme-menu-button {
   background-color: inherit;
-  border: none;
   text-transform: lowercase;
   width: 70px;
   cursor: pointer;
