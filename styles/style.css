@@ -64,7 +64,7 @@
 .decorated-corner::after {
   content: "";
   position: absolute;
-  width: 25px; 
+  width: 25px;
   height: 25px;
   border-left: 1px solid var(--color-disign);
   border-bottom: 1px solid var(--color-disign);
